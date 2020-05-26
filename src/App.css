@@ -3,14 +3,24 @@
   /* display: flex; */
 }
 
+.title {
+  text-align: center;
+}
+
 .game {
   display: flex;
   text-align: center;
   height: 80vh;
+  justify-content: center;
 }
 
 #buttons {
   position: relative;
   text-align: center;
+}
+
+.roundStatus {
+  margin:auto;
+  width: 20vh;
 }
 

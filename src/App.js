@@ -131,7 +131,7 @@ class App extends Component {
         <div className="game">
           {/* <div id="game"> */}
           <CardList title="Your cards" cards={this.state.playerHand} activeCards={this.state.activePlayerCards} />
-          <p>{this.state.wonStatus != null ? this.state.wonStatus : ""}</p>
+          <p className="roundStatus">{this.state.wonStatus != null ? this.state.wonStatus : ""}</p>
           <CardList title="Opponent's cards" cards={this.state.opponentHand} activeCards={this.state.activeOppCards} />
           {/* </div> */}
         </div>
