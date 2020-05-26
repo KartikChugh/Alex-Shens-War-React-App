@@ -10,6 +10,11 @@ Simple card game. Since I am not an expert, here's Wikipedia's explanation:
 
 This particular implementation of War will draw 3 face-down when a "war" is initiated, and will use the 4th card drawn to determine who wins. "Wars" are also automatically resolved, without the player having to click buttons to manually draw out the next 4 cards.
 
+## Instructions
+
+Just hit the "Start" button to shuffle the deck and deal cards to both you and the opponent, then click the "Play Round" button until one of you wins!
 ## Notes on development
 
 I put in a button to autoresolve the entire game by repeatedly playing turns, but for some reason it just breaks. It should be equivalent to a user repeatedly clicking "play round," but it looks like cards are being progressively lost from the arrays used to keep track of player/opponent cards in the state. I'm pretty sure this has something to do with the way setState works in React (i.e. it's not updated by the time the next run of the loop), but I'm not sure how to fix it. 
+
+Also, I didn't manage to get full victory checking in `playRound` finished (right now it only triggers if a player loses a war by not having enough cards to fight), but that would be technically trivial to implement. `playGame` has full victory checking, but it also has the aforementioned issues. 
