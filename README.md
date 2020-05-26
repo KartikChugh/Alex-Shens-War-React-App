@@ -1,7 +1,5 @@
 <img src="war.png" height="250">
 
-*****
-
 Simple card game. Since I am not an expert, here's Wikipedia's explanation:
 
 > The objective of the game is to win all of the cards.
