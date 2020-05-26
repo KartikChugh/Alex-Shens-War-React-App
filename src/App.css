@@ -1,3 +1,16 @@
 .App {
   text-align: center;
+  /* display: flex; */
 }
+
+.game {
+  display: flex;
+  text-align: center;
+  height: 80vh;
+}
+
+#buttons {
+  position: relative;
+  text-align: center;
+}
+
